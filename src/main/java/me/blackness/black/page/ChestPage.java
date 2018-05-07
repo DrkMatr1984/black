@@ -83,4 +83,9 @@ public final class ChestPage implements Page {
             pane.accept(event);
         }
     }
+
+    @Override
+    public Page clone(String title) {
+        return new ChestPage(title, size, panes);
+    }
 }

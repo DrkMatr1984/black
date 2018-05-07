@@ -30,4 +30,5 @@ public interface Page extends InventoryHolder, Target<Object> {
     void showTo(Player player);
     void handleClose(InventoryCloseEvent event);
     void accept(ElementClickEvent event);
+    Page clone(String title);
 }
